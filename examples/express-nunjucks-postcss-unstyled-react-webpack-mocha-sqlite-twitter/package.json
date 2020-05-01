@@ -7,7 +7,9 @@
     "start": "node server.js",
     "test": "npm-run-all test:*",
     "test:client": "mocha test/client --recursive --compilers js:babel-register",
-    "test:server": "mocha test/server --recursive"
+    "test:server": "mocha test/server --recursive",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "async": "^1.5.2",
@@ -39,7 +41,8 @@
     "redux-thunk": "^2.0.1",
     "request": "^2.69.0",
     "sqlite3": "^3.1.1",
-    "whatwg-fetch": "^0.11.0"
+    "whatwg-fetch": "^0.11.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",
@@ -67,5 +70,6 @@
   },
   "engines": {
     "node": "6.1.0"
-  }
+  },
+  "snyk": true
 }
