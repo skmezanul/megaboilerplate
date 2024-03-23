@@ -55,7 +55,7 @@
     "velocity": "^0.7.2",
     "velocity-react": "^1.1.5",
     "webpack": "^1.13.2",
-    "webpack-dev-middleware": "^1.7.0",
+    "webpack-dev-middleware": "^5.3.4",
     "webpack-hot-middleware": "^2.12.2"
   },
   "babel": {
