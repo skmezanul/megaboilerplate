@@ -10,7 +10,7 @@
     "test:server": "mocha test/server --recursive"
   },
   "dependencies": {
-    "async": "^1.5.2",
+    "async": "^3.2.2",
     "babel-core": "^6.7.2",
     "babel-polyfill": "^6.7.2",
     "bcrypt-nodejs": "^0.0.3",
