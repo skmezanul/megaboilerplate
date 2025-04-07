@@ -7,7 +7,9 @@
     "start": "node server.js",
     "test": "npm-run-all test:*",
     "test:client": "mocha test/client --recursive --compilers js:babel-register",
-    "test:server": "mocha test/server --recursive"
+    "test:server": "mocha test/server --recursive",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "async": "^1.5.2",
@@ -15,18 +17,18 @@
     "babel-polyfill": "^6.7.2",
     "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.15.1",
-    "bookshelf": "^0.9.2",
+    "bookshelf": "^0.10.0",
     "compression": "^1.6.2",
     "cookie-parser": "^1.4.1",
     "dotenv": "^2.0.0",
     "express": "^4.13.4",
-    "express-validator": "^2.20.4",
-    "jsonwebtoken": "^5.7.0",
-    "knex": "^0.10.0",
+    "express-validator": "^5.0.0",
+    "jsonwebtoken": "^7.4.1",
+    "knex": "^0.11.0",
     "moment": "^2.12.0",
     "morgan": "^1.7.0",
     "nodemailer": "^2.3.0",
-    "nunjucks": "^2.4.1",
+    "nunjucks": "^3.1.3",
     "postcss-cssnext": "^2.6.0",
     "postcss-import": "^8.1.2",
     "postcss-middleware": "^1.0.0",
@@ -38,8 +40,9 @@
     "redux": "^3.3.1",
     "redux-thunk": "^2.0.1",
     "request": "^2.69.0",
-    "sqlite3": "^3.1.1",
-    "whatwg-fetch": "^0.11.0"
+    "sqlite3": "^4.0.0",
+    "whatwg-fetch": "^0.11.0",
+    "snyk": "^1.163.0"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",
@@ -67,5 +70,6 @@
   },
   "engines": {
     "node": "6.1.0"
-  }
+  },
+  "snyk": true
 }
